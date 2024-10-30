@@ -1,0 +1,15 @@
+*{
+margin: 0;
+padding: 0;
+
+}
+
+.lineaAzul {
+  background-color:blue;
+  border: 1px ;
+  padding: 1px;
+  color:white;
+ 
+  height: 5px;
+  width:50px;
+}
