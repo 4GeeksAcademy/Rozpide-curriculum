@@ -3,22 +3,28 @@ margin: 0;
 padding: 0;
 
 }
+body {
+  margin-top:50px;
+}
 .custom-list {
   list-style-type: none; /* Quitar la viñeta */
   padding-left: 0; /* Eliminar el padding por defecto */
 }
 
 .custom-list li {
-  position: relative; /* Necesario para posicionar el pseudo-elemento */
-  padding-left: 20px; /* Espacio para el nuevo símbolo */
+  position: relative; /* Esto es para posicionar el nuevo elemento */
+  padding-left: 20px;
+  margin:15px; /* Espacio suficiente para el nuevo símbolo */
 }
 
 .custom-list li::before {
-  font-size: 19px;
-  content: ">"; /* El símbolo a mostrar */
+  font-size: 35px;
+ 
+  content: "›"; /* El símbolo a mostrar */
   color: blue; /* Color del símbolo */
-  position: absolute; /* Posicionarlo absolutamente */
-  left: 0; /* Alinear a la izquierda */
+  position: absolute; /* Posicionarlo absolutamente para que se coloque alineado con los items*/
+  top:-15px;/*ajustamos verticalmente el simbolo*/
+  left: 0; /* alinear a la izquierda */
 }
 
 
@@ -36,7 +42,11 @@ padding: 0;
   color:rgb(48, 76, 141);
 }
 
-.imagen1{
-  width:100%;
-  height: 100%;
-  }
+.imagen1 {/*Esto hace que la imagen no se distorsione*/
+  max-width: 100%;
+  height: auto;
+}
+.progress-bar{
+  height: 8px;
+  width: 80%;
+}
