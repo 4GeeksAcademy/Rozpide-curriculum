@@ -33,7 +33,6 @@ body {
   border: 25px ;
   margin-left: 12px;
   padding: 0px;
-  color:white;
   border-radius: 10px;
   height: 5px;
   width:60px;
@@ -47,6 +46,18 @@ body {
   height: auto;
 }
 .progress-bar{
+  background-color:rgb(221, 226, 229);
+  border: 25px ;
+  margin-left: 12px;
+  padding: 0px;
+  color:white;
+  border-radius: 10px;
+  
   height: 8px;
-  width: 80%;
+  
 }
+.hht , .ccs, .jjas, .pyt, .api, .rect{
+  width: 100%;
+}
+
+
