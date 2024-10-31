@@ -22,15 +22,18 @@ padding: 0;
 }
 
 
-
 .lineaAzul {
-  background-color:blue;
-  border: 1px ;
-  padding: 1px;
+  background-color:rgb(63, 162, 208);
+  border: 25px ;
+  margin-left: 12px;
+  padding: 0px;
   color:white;
- 
+  border-radius: 10px;
   height: 5px;
-  width:50px;
+  width:60px;
+}
+.nombre, .work, .skills, .facts {
+  color:rgb(48, 76, 141);
 }
 
 .imagen1{
