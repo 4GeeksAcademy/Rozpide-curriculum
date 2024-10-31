@@ -3,6 +3,25 @@ margin: 0;
 padding: 0;
 
 }
+.custom-list {
+  list-style-type: none; /* Quitar la viñeta */
+  padding-left: 0; /* Eliminar el padding por defecto */
+}
+
+.custom-list li {
+  position: relative; /* Necesario para posicionar el pseudo-elemento */
+  padding-left: 20px; /* Espacio para el nuevo símbolo */
+}
+
+.custom-list li::before {
+  font-size: 19px;
+  content: ">"; /* El símbolo a mostrar */
+  color: blue; /* Color del símbolo */
+  position: absolute; /* Posicionarlo absolutamente */
+  left: 0; /* Alinear a la izquierda */
+}
+
+
 
 .lineaAzul {
   background-color:blue;
@@ -13,3 +32,8 @@ padding: 0;
   height: 5px;
   width:50px;
 }
+
+.imagen1{
+  width:100%;
+  height: 100%;
+  }
